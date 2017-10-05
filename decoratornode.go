@@ -54,3 +54,8 @@ func NewDecorator(decoratorid int, label string, node BTNode, limit int) *Decora
 
 	return &x
 }
+
+// SetNode updates the Decorators wrapped Node
+func (t *DecoratorNode) SetNode(node BTNode) {
+	t.Node = node
+}

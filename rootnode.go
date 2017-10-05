@@ -24,6 +24,11 @@ func NewRootNode(nm string, node BTNode, step bool) *RootNode {
 	return &x
 }
 
+// SetNode updates the Root Node
+func (t *RootNode) SetNode(node BTNode) {
+	t.Node = node
+}
+
 // Tick executes the root node for the next tick
 // and updates the state of the Behavior Tree
 func (t *RootNode) Tick(n int) int {
